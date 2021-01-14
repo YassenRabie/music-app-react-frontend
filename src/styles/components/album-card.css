@@ -1,0 +1,30 @@
+.album-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    margin: 3rem auto;
+    box-shadow: 0 5px 12px rgba(207, 53, 14, 0.5);
+    background-color: #700e0e;
+    background-image: 
+    radial-gradient(circle at 94.14% 11.26%, #f6560b, transparent 100%),
+    radial-gradient(circle at 5.64% 9.28%, #fe0032, transparent 100%),
+    radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.album-card img{
+    border: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.album-card .artist{
+    background: rgba(255, 255, 255, 0.9);
+    color: tomato;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}

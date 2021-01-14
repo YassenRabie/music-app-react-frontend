@@ -1,0 +1,8 @@
+.navbar{
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navbar .nav-links{
+    display: flex;
+}

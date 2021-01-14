@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "DroidSerif";
+    src: url("../fonts/BebasNeue Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "DroidSerif";
+    src: url("../fonts/BebasNeue Regular.ttf");
+    font-weight: reguler;
+}
+
+@font-face {
+    font-family: "DroidSerif";
+    src: url("../fonts/BebasNeue Bold.ttf");
+    font-weight: 600;
+}
+
+body{
+    font-family: DroidSerif;
+}
+
+@import "./normalize.css";
+@import "./general.css";
+@import "./components/navbar.css";
+@import "./components/hero.css";
+@import "./components/producing.css";
+@import "./components/footer.css";
+@import "./components/album-card.css";
+@import "./components/songs.css";
+@import "./components/artists.css";

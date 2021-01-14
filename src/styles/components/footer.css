@@ -1,0 +1,33 @@
+.footer{
+    background-color: #1b191a;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .footer-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer .footer-info .footer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 40px;
+}
+
+.footer .footer-navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer .footer-navbar .footer-navbar-links{
+    display: flex;
+    gap:1rem;
+}

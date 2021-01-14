@@ -18,40 +18,6 @@ export const GlobalContext = createContext(initialState)
 export const GlobalProvider = ({ children }) => {
    const [state, dispatch] = useReducer(AppReducer, initialState)
 
-   useEffect(() => {
-      // Fetch Artists
-      axios
-         .get("/artists", { crossDomain: true })
-         .then((response) => {
-            setArtists(response.data)
-         })
-         .catch((error) => {
-            console.log(error)
-         })
-
-      // Fetch Albums
-      axios
-         .get("/albums", { crossDomain: true })
-         .then((response) => {
-            setAlbums(response.data)
-         })
-         .catch((error) => {
-            console.log(error)
-         })
-
-      // Fetch Songs
-      axios
-         .get("/songs", { crossDomain: true })
-         .then((response) => {
-            setSongs(response.data)
-            console.log(response.data)
-
-         })
-         .catch((error) => {
-            console.log(error)
-         })
-   }, [])
-
    // Actions
    const setArtists = (artists) => {
       dispatch({

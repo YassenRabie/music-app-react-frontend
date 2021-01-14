@@ -1,14 +1,14 @@
 import React from 'react'
-import { AlbumsList } from './AlbumsList'
-import { ArtistList } from './ArtistsList'
-import { SongsList } from './SongsList'
+import { Hero } from './Hero'
+import Songs from './Songs'
+import Artists from './Artists'
 
 export const Landing = () => {
    return (
-      <div>
-         <ArtistList />
-         <AlbumsList />
-         <SongsList />
-      </div>
+      <>
+         <Hero/>
+         <Songs/>
+         <Artists/>
+      </>
    )
 }

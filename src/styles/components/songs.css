@@ -1,0 +1,32 @@
+.songs{
+    padding-top:1rem;
+    padding-bottom: 3rem;
+}
+
+.songs h2{
+    font-size: 35px;
+    border-bottom: 3px solid #700e0e;
+    width: max-content;
+}
+
+.songs table{
+    width: 100%;
+}
+
+.songs th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+
+.songs th{
+    font-size: 20px;
+}
+
+.songs td{
+    font-size: 17px;
+}
+
+.songs tr:hover{
+    background-color: rgb(250, 250, 250);
+    
+}

@@ -1,0 +1,91 @@
+.hero{
+    background-color: #700e0e;
+    background-image: 
+    radial-gradient(circle at 98.17% 97.87%, #000000, transparent 40%),
+    radial-gradient(circle at 94.14% 11.26%, #f6560b, transparent 56%),
+    radial-gradient(circle at 4.61% 93.91%, #030001, transparent 40%),
+    radial-gradient(circle at 5.64% 9.28%, #fe0032, transparent 61%),
+    radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.info{
+    color: white;
+    font-size: 27px;
+}
+
+.hero .info .hitit-btn{
+    background-color: white;
+    color: tomato;
+    border: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    font-weight: 800;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.hero .info .hitit-btn:hover{
+    background-color: tomato;
+    color: white;
+    border-radius: 0;
+}
+
+.albums{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding:7rem 0;
+}
+
+.albums .album{
+    position: relative;
+}
+
+.albums .album img{
+    width: 100%;
+}
+
+.albums .album .glass-effect{
+    background: rgba(255,255,255, 0.1);
+    background: linear-gradient(45deg, 
+    rgba(255,255,255,0.1) 0%,
+    rgba(255,255,255,0.5) 50%, 
+    rgba(255,255,255,0.1) 100%);
+    border:1.5px solid rgba(255,255,255, 0.35);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 3px;
+}
+
+.album:hover .glass-effect{
+    background: linear-gradient(45deg, 
+    rgba(255,255,255,0.5) 0%,
+    rgba(255,255,255,0.5) 50%, 
+    rgba(255,255,255,0.5) 100%);
+}
+
+@media screen and (max-width:850px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .albums{
+        width: 100%;
+        padding: 1rem 0 4rem;
+        gap: 2rem;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

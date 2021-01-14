@@ -1,11 +1,9 @@
-import React, { useContext } from 'react'
-import { GlobalContext } from '../context/GlobalState'
+import React from 'react'
 
-export const ArtistList = () => {
-   const { artists } = useContext(GlobalContext)
+export const ArtistsList = ({artists}) => {
 
    return (
-      <div className="container">
+      <div className="container artists">
          <h2>Artists List</h2>
 
          <table>
@@ -13,10 +11,10 @@ export const ArtistList = () => {
                <th>Artist Name</th>
                <th>Birthday</th>
             </tr>
-            {artists.map((artist) => {
+            {artists && artists.map((artist) => {
                return <tr>
-                  <td>{artist.artist_name}</td>
-                  <td>{artist.artist_birthday}</td>
+                  <td>{artist.artistName}</td>
+                  <td>{artist.artistBirthday}</td>
                </tr>
             })}
          </table>
